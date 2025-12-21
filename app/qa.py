@@ -1,7 +1,7 @@
 # backend/qa.py
 
-from retrieve import Retriever
-from llm import call_llm
+from app.retrieve import Retriever
+from app.llm import call_llm
 
 
 class QASystem:
@@ -51,3 +51,4 @@ Answer:
             return "Information not available in official documents."
 
         return answer.strip()
+
