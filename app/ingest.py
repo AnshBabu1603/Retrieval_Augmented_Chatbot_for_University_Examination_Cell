@@ -2,11 +2,11 @@
 
 from pathlib import Path
 
-from loaders import load_pdf_text, load_txt_text
-from chunking import clean_text, semantic_sections, chunk_sections
-from metadata_loader import load_metadata
-from embedding import EmbeddingModel
-from vector_store import VectorStore
+from app.loaders import load_pdf_text, load_txt_text
+from app.chunking import clean_text, semantic_sections, chunk_sections
+from app.metadata_loader import load_metadata
+from app.embedding import EmbeddingModel
+from app.vector_store import VectorStore
 
 
 # --------------------------------------------------
@@ -145,3 +145,4 @@ print("📦 Storing embeddings in vector database...")
 vector_db.add_documents(texts, embeddings, metadatas)
 
 print("✅ Embeddings stored successfully in vector database.")
+
