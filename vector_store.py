@@ -1,20 +1,18 @@
-# backend/vector_store.py
+# app/vector_store.py
 
 import chromadb
 from chromadb.config import Settings
 
-
 class VectorStore:
     def __init__(self):
-        self.client = chromadb.PersistentClient(
-            path="chroma_db",
-            settings=Settings(
-                anonymized_telemetry=False
-            )
+        self.persist_dir = "chroma_db"
+
+        self.client = chromadb.Client(
+            Settings(persist_directory=self.persist_dir)
         )
 
         self.collection = self.client.get_or_create_collection(
-            name="lpu_exam_knowledge"
+            name="exam_documents"
         )
 
     def add_documents(self, texts, embeddings, metadatas):
@@ -26,3 +24,6 @@ class VectorStore:
             metadatas=metadatas,
             ids=ids
         )
+
+    def is_empty(self):
+        return self.collection.count() == 0
