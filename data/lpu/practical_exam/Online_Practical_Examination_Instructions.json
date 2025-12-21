@@ -1,0 +1,21 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "practical_exam",
+  "exam_level": "ETP",
+  "exam_mode": "online",
+  "exam_format": "viva_voce",
+  "platform": "LPU MyClass",
+  "content_focus": [
+    "viva_examination",
+    "system_requirements",
+    "proctoring",
+    "navigation_rules",
+    "unfair_means_case",
+    "support_process"
+  ],
+  "applies_to": [
+    "practical_courses"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}

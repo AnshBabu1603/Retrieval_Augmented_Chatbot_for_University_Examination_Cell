@@ -1,0 +1,20 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "online_exam",
+  "exam_level": "MTT",
+  "exam_pattern": "MCQ",
+  "exam_mode": "online",
+  "platform": "LPU MyClass",
+  "content_focus": [
+    "exam_pattern",
+    "duration",
+    "negative_marking",
+    "proctoring",
+    "technical_requirements"
+  ],
+  "applies_to": [
+    "theory_courses"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}

@@ -1,0 +1,21 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "exam_conduct_umc",
+  "applies_to": "all_exams",
+  "exam_mode": [
+    "online",
+    "offline"
+  ],
+  "content_focus": [
+    "identity_verification",
+    "prohibited_items",
+    "exam_hall_conduct",
+    "bio_break_rules",
+    "unfair_means_case",
+    "omr_instructions",
+    "disciplinary_actions"
+  ],
+  "authority_level": "highest",
+  "year": "2024",
+  "source": "curated_from_official_documents"
+}

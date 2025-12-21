@@ -1,0 +1,19 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "scrutiny_revaluation",
+  "exam_level": "MTT",
+  "process_type": "scrutiny",
+  "platform": "UMS",
+  "content_focus": [
+    "scrutiny_schedule",
+    "question_wise_marks",
+    "allowed_comments",
+    "reporting_rules",
+    "unfair_means_case"
+  ],
+  "applies_to": [
+    "theory_courses"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}

@@ -1,0 +1,19 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "practical_exam",
+  "exam_mode": "offline",
+  "exam_level": "all",
+  "content_focus": [
+    "identity_verification",
+    "attendance",
+    "practical_exam_rules",
+    "byod_guidelines",
+    "unfair_means_case",
+    "medical_exception"
+  ],
+  "applies_to": [
+    "practical_courses"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}

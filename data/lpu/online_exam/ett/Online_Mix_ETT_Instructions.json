@@ -1,0 +1,21 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "online_exam",
+  "exam_level": "ETT",
+  "exam_pattern": "Mix",
+  "exam_mode": "online",
+  "platform": "LPU MyClass",
+  "content_focus": [
+    "mcq_pattern",
+    "subjective_pattern",
+    "duration",
+    "negative_marking",
+    "answer_sheet_upload",
+    "proctoring"
+  ],
+  "applies_to": [
+    "theory_courses"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}

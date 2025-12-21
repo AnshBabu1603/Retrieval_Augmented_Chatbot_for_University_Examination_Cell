@@ -1,0 +1,18 @@
+{
+  "university": "Lovely Professional University",
+  "document_category": "offline_exam",
+  "exam_mode": "offline",
+  "exam_level": "all",
+  "content_focus": [
+    "exam_conduct",
+    "unfair_means_case",
+    "omr_instructions"
+  ],
+  "applies_to": [
+    "MTT",
+    "ETT",
+    "Reappear"
+  ],
+  "year": "2024",
+  "source": "official_lpu_website"
+}
