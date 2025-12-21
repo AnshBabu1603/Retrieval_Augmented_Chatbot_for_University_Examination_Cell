@@ -1,5 +1,5 @@
 from openai import OpenAI
-from config import OPENAI_API_KEY
+from app.config import OPENAI_API_KEY
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -20,3 +20,4 @@ def call_llm(prompt: str) -> str:
     )
 
     return response.choices[0].message.content.strip()
+
