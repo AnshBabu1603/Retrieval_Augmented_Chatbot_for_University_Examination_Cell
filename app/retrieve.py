@@ -1,7 +1,7 @@
 # backend/retrieve.py
 
-from embedding import EmbeddingModel
-from vector_store import VectorStore
+from app.embedding import EmbeddingModel
+from app.vector_store import VectorStore
 
 
 class Retriever:
@@ -39,3 +39,4 @@ class Retriever:
         metadatas = results["metadatas"][0]
 
         return documents, metadatas
+
