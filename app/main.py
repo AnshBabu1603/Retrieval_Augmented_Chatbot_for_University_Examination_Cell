@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api import router
+from app.api import router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="AI Backend")
@@ -18,3 +18,4 @@ app.include_router(router)
 @app.get("/")
 def health():
     return {"status": "Backend running 🚀"}
+
