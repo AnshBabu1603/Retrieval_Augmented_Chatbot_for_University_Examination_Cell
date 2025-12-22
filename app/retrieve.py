@@ -1,4 +1,4 @@
-# backend/retrieve.py
+# app/retrieve.py
 
 from app.embedding import EmbeddingModel
 from app.vector_store import VectorStore
@@ -6,7 +6,7 @@ from app.vector_store import VectorStore
 
 class Retriever:
     def __init__(self, top_k: int = 8):
-        self.embedder = EmbeddingModel()
+        self.embedder = EmbeddingModel()   # ONLY for query embedding
         self.vector_db = VectorStore()
         self.top_k = top_k
 
@@ -23,20 +23,19 @@ class Retriever:
         Retrieve relevant document chunks using domain-aware query expansion.
         """
 
-        # 🔹 STEP 1: GENERAL QUERY EXPANSION (FOR ALL QUESTIONS)
+        # 🔹 STEP 1: QUERY EXPANSION (LIGHTWEIGHT STRING OPERATION)
         expanded_query = f"{query} {self.exam_domain_context}"
 
-        # 🔹 STEP 2: EMBEDDING
-        query_embedding = self.embedder.embed_texts([expanded_query])[0]
+        # 🔹 STEP 2: QUERY EMBEDDING (FIX 5 COMPLIANT)
+        query_embedding = self.embedder.embed_query(expanded_query)
 
-        # 🔹 STEP 3: VECTOR SEARCH
+        # 🔹 STEP 3: VECTOR SEARCH (NO EMBEDDING OF DOCS)
         results = self.vector_db.collection.query(
             query_embeddings=[query_embedding],
             n_results=self.top_k
         )
 
-        documents = results["documents"][0]
-        metadatas = results["metadatas"][0]
+        documents = results.get("documents", [[]])[0]
+        metadatas = results.get("metadatas", [[]])[0]
 
         return documents, metadatas
-
