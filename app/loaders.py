@@ -1,4 +1,4 @@
-# backend/loaders.py
+
 from pypdf import PdfReader
 from pathlib import Path
 
@@ -16,3 +16,4 @@ def load_pdf_text(file_path: Path) -> str:
 def load_txt_text(file_path: Path) -> str:
     with open(file_path, "r", encoding="utf-8") as f:
         return f.read()
+
